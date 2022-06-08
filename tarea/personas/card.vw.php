@@ -16,13 +16,14 @@
   <div class="card-body">
     <div class="row">
     <div class="col">
-      <p class="card-text">CI Nro.:<?php echo $data['cin']; ?> </p>
-      <p class="">Edad: <?php echo edadPersona($data['fenac']); ?></p>
-      <p class="card-text">Localidad:<?php echo nombreCiudad($link,$data['ciudad_id']); ?> </p>
+      <p class="card-text">CI Nro.:<?php echo " ". $data['cin']; ?> </p>
+      <p class="">Edad: <?php echo " ". edadPersona($data['fenac']); ?></p>
+      <p class="card-text">Localidad:<?php echo " ". nombreCiudad($link,$data['ciudad_id']); ?> </p>
     </div>
     <div class="col">
       <a href="<?php echo "index.php?mod=edit&id=".$data["id"]; ?>" class="btn btn-warning">Editar</a>
       <a href="<?php echo "index.php?mod=delecte&id=".$data["id"]; ?>" class="btn btn-danger">Borrar</a>
+      <a href="<?php echo  "json.php?id=".$data["id"]; ?>" target="new" class="btn btn-primary">JSON</a>
     </div>
     </div>
   </div>

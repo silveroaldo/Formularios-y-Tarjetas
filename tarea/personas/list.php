@@ -1,7 +1,9 @@
 <?php
 $res=mostrarTodos($link);
  ?>
- <h3>Personas</h3><a href="index.php?mod=new" class="btn btn-success">Nuevo</a>
+ <h3>Personas</h3>
+ <a href="index.php?mod=new" class="btn btn-success">Nuevo</a>
+ <a href="<?php echo "json.php?id=".$data["id"]; ?>" target="new" class="btn btn-primary">JSON</a>
      <?php
      while ($data=mysqli_fetch_array($res))
      {
