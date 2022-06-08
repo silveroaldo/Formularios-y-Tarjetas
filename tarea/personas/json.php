@@ -2,7 +2,7 @@
 require('../libs/conex.php');
 require('../libs/ciudades.lib.php');
 require('../libs/personas.lib.php');
-header("Content-Type: application/json; charset=UTF-8");
+header("Content-Type: application/json; charset=UTF-8");//
 $link=conectar();
 if (!$_GET['id'])
 {
