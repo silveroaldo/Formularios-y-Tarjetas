@@ -2,8 +2,8 @@
 $res=mostrarCiudades($link);
  ?>
  <h3>ciudades</h3>
- <table>
-   <thead>
+ <table class="table-primary">
+ <thead>
      <tr>
        <th>Id</th>
        <th>Ciudad</th>
